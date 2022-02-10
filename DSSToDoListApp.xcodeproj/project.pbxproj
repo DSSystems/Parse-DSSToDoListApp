@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B0E267427ACA61200B3F148 /* DSSToDoItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E267327ACA61200B3F148 /* DSSToDoItemCell.swift */; };
 		3B0E267D27ACA62700B3F148 /* DSSToDoListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E267C27ACA62700B3F148 /* DSSToDoListItemModel.swift */; };
-		3B2CFBFA27AD42EA00D1400F /* DSSAccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CFBF927AD42EA00D1400F /* DSSAccountManager.swift */; };
-		3B2CFC0E27AD5DEE00D1400F /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2CFC0D27AD5DEE00D1400F /* Environment.swift */; };
+		3B95DEC627B48271007915D8 /* DSSToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B95DEC527B48271007915D8 /* DSSToDoItem.swift */; };
 		3BED8A1A27AC909300F432D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED8A1927AC909300F432D2 /* AppDelegate.swift */; };
 		3BED8A1C27AC909300F432D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED8A1B27AC909300F432D2 /* SceneDelegate.swift */; };
 		3BED8A1E27AC909300F432D2 /* DSSRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BED8A1D27AC909300F432D2 /* DSSRootViewController.swift */; };
@@ -46,8 +45,7 @@
 		1A51BA06D5CDE725CEFCFC39 /* Pods-DSSToDoListAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSSToDoListAppTests.release.xcconfig"; path = "Target Support Files/Pods-DSSToDoListAppTests/Pods-DSSToDoListAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		3B0E267327ACA61200B3F148 /* DSSToDoItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSToDoItemCell.swift; sourceTree = "<group>"; };
 		3B0E267C27ACA62700B3F148 /* DSSToDoListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSToDoListItemModel.swift; sourceTree = "<group>"; };
-		3B2CFBF927AD42EA00D1400F /* DSSAccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSAccountManager.swift; sourceTree = "<group>"; };
-		3B2CFC0D27AD5DEE00D1400F /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3B95DEC527B48271007915D8 /* DSSToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSSToDoItem.swift; sourceTree = "<group>"; };
 		3BED8A1627AC909300F432D2 /* DSSToDoListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSSToDoListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BED8A1927AC909300F432D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BED8A1B27AC909300F432D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				3B0E267C27ACA62700B3F148 /* DSSToDoListItemModel.swift */,
+				3B95DEC527B48271007915D8 /* DSSToDoItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,7 +139,6 @@
 		3B2CFBF827AD42D600D1400F /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				3B2CFBF927AD42EA00D1400F /* DSSAccountManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -174,7 +172,6 @@
 				3B0E268427ACA6EF00B3F148 /* ViewControllers */,
 				3B0E267B27ACA61900B3F148 /* Models */,
 				3B0E267227ACA60900B3F148 /* Views */,
-				3B2CFC0D27AD5DEE00D1400F /* Environment.swift */,
 				3BED8A1927AC909300F432D2 /* AppDelegate.swift */,
 				3BED8A1B27AC909300F432D2 /* SceneDelegate.swift */,
 				3BED8A2227AC909600F432D2 /* Assets.xcassets */,
@@ -450,12 +447,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0E267427ACA61200B3F148 /* DSSToDoItemCell.swift in Sources */,
-				3B2CFC0E27AD5DEE00D1400F /* Environment.swift in Sources */,
+				3B95DEC627B48271007915D8 /* DSSToDoItem.swift in Sources */,
 				3B0E267D27ACA62700B3F148 /* DSSToDoListItemModel.swift in Sources */,
 				3BED8A1E27AC909300F432D2 /* DSSRootViewController.swift in Sources */,
 				3BED8A1A27AC909300F432D2 /* AppDelegate.swift in Sources */,
 				3BED8A1C27AC909300F432D2 /* SceneDelegate.swift in Sources */,
-				3B2CFBFA27AD42EA00D1400F /* DSSAccountManager.swift in Sources */,
 				3BED8A5627AC929900F432D2 /* DSSListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +624,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CNKGXNUW6K;
 				INFOPLIST_FILE = DSSToDoListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,6 +646,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CNKGXNUW6K;
 				INFOPLIST_FILE = DSSToDoListApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

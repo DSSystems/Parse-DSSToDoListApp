@@ -16,6 +16,6 @@ target 'DSSToDoListApp' do
     # Pods for testing
   end
 
-  pod 'Parse'
+  pod 'ParseSwift'
 
 end

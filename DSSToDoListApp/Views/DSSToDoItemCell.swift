@@ -19,9 +19,13 @@ class DSSToDoItemCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+        
+        accessoryType = .detailButton
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        
+        accessoryType = .detailButton
     }
 }

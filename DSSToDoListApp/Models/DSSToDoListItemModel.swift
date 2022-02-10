@@ -10,5 +10,5 @@ import Foundation
 struct DSSToDoListItemModel {
     let id: String
     let title: String
-    let description: String
+    let description: String?
 }
